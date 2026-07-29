@@ -11,7 +11,6 @@ export type IFormatter = (val: any, data: object) => any;
  * the formatter operates. For example the date / time formatters take
  * information on the formatting to be used.
  *
- * @export
  */
 export default class Formatter {
 	/**
@@ -20,7 +19,6 @@ export default class Formatter {
 	 *
 	 * Uses MomentJS - formats are defined by Moment.
 	 *
-	 * @static
 	 * @param {string} format Format to convert to.
 	 * @returns {IFormatter} Configured formatter function
 	 */
@@ -40,7 +38,6 @@ export default class Formatter {
 	 *
 	 * Uses MomentJS - formats are defined by Moment.
 	 *
-	 * @static
 	 * @param {string} format Format to convert from.
 	 * @returns {IFormatter} Configured formatter function
 	 */
@@ -59,7 +56,6 @@ export default class Formatter {
 	 *
 	 * Uses MomentJS - formats are defined by Moment.
 	 *
-	 * @static
 	 * @param {string} from From format
 	 * @param {string} to To format.
 	 * @returns {IFormatter} Configured formatter function
@@ -77,7 +73,6 @@ export default class Formatter {
 	/**
 	 * Convert a string of values into an array for use with checkboxes.
 	 *
-	 * @static
 	 * @param {string} [delimiter='|'] Delimiter string (i.e. what to split on)
 	 * @returns {IFormatter} Configured formatter function
 	 */
@@ -91,7 +86,6 @@ export default class Formatter {
 	 * Convert an array of values from a checkbox into a string which can be
 	 * used to store in a text field in a database.
 	 *
-	 * @static
 	 * @param {string} [delimiter='|'] Delimiter string (i.e. what to join on)
 	 * @returns {IFormatter} Configured formatter function
 	 */
@@ -107,7 +101,6 @@ export default class Formatter {
 	 * value, often leading to an empty string and null overlapping. This method
 	 * will check the value to operate on and return null if it is empty.
 	 *
-	 * @static
 	 * @param {*} emptyValue Value to use if an empty value is submitted. `null`
 	 *   is the typical value.
 	 * @returns {IFormatter} Configured formatter function
@@ -124,7 +117,6 @@ export default class Formatter {
 	 * input in regions where a comma is used as the decimal character. Use with
 	 * a set formatter.
 	 *
-	 * @static
 	 * @param {string} [char=','] Decimal place character
 	 * @returns {IFormatter} Configured formatter function
 	 */
@@ -138,7 +130,6 @@ export default class Formatter {
 	 * Convert a number with a period (dot) as the decimal character to use
 	 * a different character (typically a comma). Use with a get formatter.
 	 *
-	 * @static
 	 * @param {string} [char=','] Decimal place character
 	 * @returns {IFormatter} Configured formatter function
 	 */

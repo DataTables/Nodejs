@@ -125,7 +125,7 @@ export default class DataTable {
 	/**
 	 * Set the database connection.
 	 *
-	 * @param Knex db interface
+	 * @param db Knex interface
 	 * @returns Self for chaining
 	 */
 	public db(db: Knex): Editor;

@@ -2,7 +2,6 @@ import Editor from "./editor.js";
 
 /**
  * Field error object.
- * @export
  */
 export interface IDtError {
 	/** Row id that caused the error */
@@ -17,7 +16,6 @@ export interface IDtError {
 
 /**
  * DataTables request's order object.
- * @export
  */
 export interface IDtOrder {
 	/** Sorting direction. */
@@ -29,7 +27,6 @@ export interface IDtOrder {
 
 /**
  * DataTables request's column information object.
- * @export
  */
 export interface IDtColumn {
 	columnControl?: {
@@ -60,7 +57,6 @@ export interface IDtColumn {
 /**
  * DataTables request object. This is the information that DataTables
  * and Editor can send to the server.
- * @export
  */
 export interface IDtRequest {
 	/** Editor - Action being requested. */
@@ -113,7 +109,6 @@ export interface IDtRequest {
 
 /**
  * Response object for DataTables and Editor
- * @export
  */
 export interface IDtResponse {
 	columnControl?: { [field: string]: object };

@@ -47,7 +47,7 @@ export default class Column {
 	/**
 	 * Set the database column name
 	 *
-	 * @param dbField Column name to set
+	 * @param name Column name to set
 	 * @returns Self for chaining
 	 */
 	public dbField(name: string): Column;
@@ -158,7 +158,7 @@ export default class Column {
 	 * Set how a list iof options (values and labels) will be retrieved for the
 	 * fields SearchPanes.
 	 *
-	 * @param sbOpts SearchPanesOptions
+	 * @param spOpts SearchPanesOptions
 	 * @return Self for chaining
 	 */
 	public searchPaneOptions(spOpts: SearchPaneOptions): Field;

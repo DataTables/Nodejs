@@ -86,7 +86,6 @@ export interface IUpload {
  * Editor.leftJoin()} for example) and the file on the file system for direct
  * web access.
  *
- * @export
  * @class Upload
  */
 export default class Upload {

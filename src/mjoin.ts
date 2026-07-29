@@ -34,7 +34,6 @@ export type IMjoinValidator = (
  * Please refer to the Editor Node documentation for further information
  * https://editor.datatables.net/manual/node
  *
- * @export
  * @class Mjoin
  * @extends {NestedData}
  */

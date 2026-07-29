@@ -15,7 +15,6 @@ export interface IHostOpts {
  * Information container about the Field and Editor instances
  * for the item being validated.
  *
- * @export
  */
 export default class ValidationHost {
 	/**

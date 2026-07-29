@@ -21,7 +21,6 @@ import { IUpload } from './upload.js';
 /**
  * Action that has been requested by the client-side
  * (based on the `action` parameter).
- * @export
  */
 export enum Action {
 	/** Get data (used by DataTables). */
@@ -63,19 +62,17 @@ export enum Action {
  * the Editor class is used, and how to install Editor on your server, please
  * refer to the {@link http://editor.datatables.net/manual Editor manual}.
  *
- * @export
  * @class Editor
  * @extends {NestedData}
  */
 export default class Editor extends NestedData {
 	public static Action = Action;
 
-	public static version: string = '3.0.0-dev';
+	public static version: string = '3.0.0';
 
 	/**
 	 * Determine the request type from an HTTP request.
 	 *
-	 * @static
 	 * @param {IDtRequest} http HTTP request - normally `request.body`. Note that
 	 *   if you are using `body-parser` you should use `{ extended: true }` as its
 	 *   options to ensure that nested properties are correctly resolved.
@@ -180,8 +177,8 @@ export default class Editor extends NestedData {
 	public db(): Knex;
 	/**
 	 * Set the database connection.
-	 * @param {Knex} Knex db interface
-	 * @returns {Editor} Self for chaining
+	 * @param db Knex db interface
+	 * @returns Self for chaining
 	 */
 	public db(db: Knex): Editor;
 	public db(db?: Knex): any {

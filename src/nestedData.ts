@@ -2,7 +2,6 @@
  * Class that provides methods to read and write from nested JSON objects,
  * using dot notation strings for the nesting. This class should be extended
  * by any wishing to use these abilities.
- * @export
  * @class NestedData
  */
 export default class NestedData {

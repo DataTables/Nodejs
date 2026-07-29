@@ -23,7 +23,7 @@ npm install --save datatables.net-editor-serverdatatables.net-editor-server
 There are two primary entry point classes in the library:
 
 * `DataTable` - for read only tables
-* `Editor` - for read / write tables, with [Editor](https://editor.datatables.net/)
+* `Editor` - for read / write tables, with [Editor](https://datatables.net/manual/extensions/editor)
 
 There are also a number of supporting classes such as `Options`, `Mjoin` and more.
 
@@ -109,9 +109,9 @@ export default router;
 
 ## Documentation
 
-For full documentation, [please refer to the DataTables site](https://datatables.net/manual/nodejs).
+For full documentation, [please refer to the DataTables site](https://datatables.net/manual/server/nodejs).
 
 
 ## License
 
-MIT — see [LICENSE](License.md) for full text.
+MIT — see [LICENSE](https://datatables.net/license/mit) for full text.

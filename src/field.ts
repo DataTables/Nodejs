@@ -13,7 +13,6 @@ import xss, { Ixss } from './xss.js';
 
 /**
  * Set types
- * @export
  */
 export enum SetType {
 	/** Do not set data */
@@ -41,7 +40,6 @@ export enum SetType {
  * {@link Mjoin.field} methods to describe what fields should be interacted
  * with by the editable table.
  *
- * @export
  * @class Field
  * @extends {NestedData}
  */
@@ -369,7 +367,7 @@ export default class Field extends NestedData {
 	 * Set how a list iof options (values and labels) will be retrieved for the
 	 * fields SearchPanes.
 	 *
-	 * @param sbOpts SearchPanesOptions
+	 * @param spOpts SearchPanesOptions
 	 * @return Self for chaining
 	 */
 	public searchPaneOptions(spOpts: SearchPaneOptions): Field;
@@ -511,8 +509,8 @@ export default class Field extends NestedData {
 	 * this method multiple times. For example, it would be possible to have a
 	 * 'required' validation and a 'maxLength' validation with multiple calls.
 	 *
-	 * Editor has a number of validation available with the {@link Validate} class
-	 * which can be used directly with this method.
+	 * Editor has a number of validation available with the {@link Validator}
+	 * class which can be used directly with this method.
 	 *
 	 * @param {IValidator} validator Validator to add to the field
 	 * @returns {Field} Self for chaining
@@ -705,7 +703,7 @@ export default class Field extends NestedData {
 	}
 
 	/**
-	 * @hidden
+	 * @ignore
 	 */
 	public async validate(
 		data: object,

@@ -24,7 +24,6 @@ export type CustomOptions = (db: Knex, search?: string) => Promise<IOption[]>;
  *
  * `Options` instances are used with the {@link Field.options} method.
  *
- * @export
  * @class Options
  */
 export default class Options {
