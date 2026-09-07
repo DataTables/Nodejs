@@ -10,6 +10,7 @@ export { default as Mjoin } from './mjoin.js';
 export { default as Options } from './options.js';
 export { default as SearchBuilderOptions } from './searchBuilderOptions.js';
 export { default as SearchPaneOptions } from './searchPaneOptions.js';
+export { default as StateRestore } from './stateRestore.js';
 export { default as Upload } from './upload.js';
 export { default as Validate } from './validators.js';
 export { Editor };
