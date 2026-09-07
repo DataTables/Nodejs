@@ -189,7 +189,7 @@ export default class StateRestore {
 	 *
 	 * @return The result
 	 */
-	public data(column?: string) {
+	public data() {
 		return this._result;
 	}
 
