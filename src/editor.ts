@@ -68,7 +68,7 @@ export enum Action {
 export default class Editor extends NestedData {
 	public static Action = Action;
 
-	public static version: string = '3.0.1';
+	public static version: string = '3.0.2';
 
 	/**
 	 * Determine the request type from an HTTP request.
